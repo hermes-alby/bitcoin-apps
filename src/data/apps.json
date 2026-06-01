@@ -1425,24 +1425,6 @@
   },
   {
     "categories": [
-      "wallets"
-    ],
-    "title": "Flash Wallet",
-    "description": "Easy non-custodial bitcoin lightning wallet",
-    "url": "https://app.paywithflash.com/?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "platforms": [
-      "ios",
-      "android"
-    ],
-    "protocols": [
-      "nwc"
-    ],
-    "walletSubcategory": [
-      "nwc_wallets"
-    ]
-  },
-  {
-    "categories": [
       "payments",
       "wallets"
     ],
