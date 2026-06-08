@@ -1255,6 +1255,18 @@
     "categories": [
       "gaming"
     ],
+    "title": "SatHive",
+    "description": "Tap coins, chain combos, and earn sats you can withdraw via Lightning.",
+    "url": "https://sathive.polsia.app/?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
+    "image": "pages/discover/sathive.png",
+    "platforms": [
+      "web"
+    ]
+  },
+  {
+    "categories": [
+      "gaming"
+    ],
     "title": "Zappy Bird",
     "description": "Classic game of flappy bird where points are sats",
     "url": "https://rolznz.github.io/zappy-bird/?ref=getalby.com&utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
