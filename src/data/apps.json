@@ -1901,20 +1901,6 @@
   },
   {
     "categories": [
-      "ai"
-    ],
-    "title": "LNFly",
-    "description": "Prototype lightning apps with a single prompt",
-    "url": "https://lnfly.albylabs.com/?ref=blog.getalby.com&utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "platforms": [
-      "web"
-    ],
-    "protocols": [
-      "nwc"
-    ]
-  },
-  {
-    "categories": [
       "misc"
     ],
     "title": "Alby Sandbox",
