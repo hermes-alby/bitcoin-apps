@@ -1019,17 +1019,6 @@
   },
   {
     "categories": [
-      "chats_and_communities"
-    ],
-    "title": "zapddit",
-    "description": "A reddit-style Nostr client with communities",
-    "url": "https://zapddit.com/?ref=getalby.com&utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "platforms": [
-      "web"
-    ]
-  },
-  {
-    "categories": [
       "trading"
     ],
     "title": "Boltz",
