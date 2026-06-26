@@ -520,6 +520,55 @@
   },
   {
     "categories": [
+      "rewards",
+      "wallets"
+    ],
+    "title": "Split",
+    "description": "Wallet that earns you sats when you spend Bitcoin",
+    "url": "https://apps.apple.com/us/app/split-rewards/id6740720801?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
+    "platforms": [
+      "ios"
+    ],
+    "protocols": [
+      "nwc"
+    ],
+    "walletSubcategory": [
+      "wallet_interfaces"
+    ]
+  },
+  {
+    "categories": [
+      "rewards",
+      "misc"
+    ],
+    "title": "ZapBook",
+    "description": "A Nostr-native social reading app with zaps",
+    "url": "https://www.zapbook.space/?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
+    "platforms": [
+      "web",
+      "android"
+    ],
+    "protocols": [
+      "nwc"
+    ]
+  },
+  {
+    "categories": [
+      "rewards",
+      "misc"
+    ],
+    "title": "Bitcoin Education Archive",
+    "description": "A gamified Bitcoin Education app where you can earn sats for learning",
+    "url": "https://bitcoineducation.quest/?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
+    "platforms": [
+      "web"
+    ],
+    "protocols": [
+      "nwc"
+    ]
+  },
+  {
+    "categories": [
       "podcast_players"
     ],
     "title": "Castamatic",
