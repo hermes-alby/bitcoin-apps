@@ -1631,17 +1631,6 @@
   },
   {
     "categories": [
-      "privacy"
-    ],
-    "title": "VPNSTR",
-    "description": "High-speed and secure VPN, paid with Lightning",
-    "url": "https://www.vpnstr.com/?ref=getalby&utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "platforms": [
-      "web"
-    ]
-  },
-  {
-    "categories": [
       "misc"
     ],
     "title": "Airbtc",
@@ -2214,27 +2203,6 @@
     "description": "Telegram tipping bot via your own connected wallet",
     "url": "https://t.me/ThunderTip_bot?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
     "image": "pages/discover/thundertip.jpg",
-    "platforms": [
-      "web",
-      "desktop",
-      "ios",
-      "android"
-    ],
-    "protocols": [
-      "nwc"
-    ],
-    "walletSubcategory": [
-      "wallet_interfaces"
-    ]
-  },
-  {
-    "categories": [
-      "wallets"
-    ],
-    "title": "Discord Zap Bot",
-    "description": "Discord tipping bot via your own connected wallet",
-    "url": "https://www.makeprisms.com/apps?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "image": "pages/discover/discord-zap-bot.jpg",
     "platforms": [
       "web",
       "desktop",
