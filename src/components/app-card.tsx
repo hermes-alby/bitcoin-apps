@@ -1,5 +1,6 @@
 import type { HighlightRanges } from "@nozbe/microfuzz";
 import type { DiscoverApp } from "../types/discover";
+import { captureAppLinkClick } from "../lib/analytics";
 import { cn } from "../lib/utils";
 import { AppImage, PlatformIcons } from "./platform-icons";
 import { Card, CardDescription, CardTitle } from "./ui/card";
@@ -47,7 +48,13 @@ export function AppCard({ app, titleRanges, descriptionRanges }: AppCardProps) {
 
   return (
     <Card className={surfaceClass} data-testid={`app-card-${app.title}`}>
-      <a href={app.url} target="_blank" rel="noopener noreferrer" className="flex h-full flex-col">
+      <a
+        href={app.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex h-full flex-col"
+        onClick={() => captureAppLinkClick(app, "card")}
+      >
         <div className="flex flex-col gap-5">
           <div className="flex min-w-0 items-center gap-5">
             <AppImage app={app} className="h-[60px] w-[60px] flex-shrink-0 rounded-lg object-contain" />

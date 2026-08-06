@@ -1,4 +1,5 @@
 import type { DiscoverApp } from "../types/discover";
+import { captureAppLinkClick } from "../lib/analytics";
 import { cn } from "../lib/utils";
 import { AppImage, PlatformIcons } from "./platform-icons";
 import { Card, CardDescription, CardTitle } from "./ui/card";
@@ -14,7 +15,13 @@ export function FeaturedCard({ app }: FeaturedCardProps) {
 
   return (
     <Card className={surfaceClass}>
-      <a href={app.url} target="_blank" rel="noopener noreferrer" className="flex h-full flex-col items-center">
+      <a
+        href={app.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex h-full flex-col items-center"
+        onClick={() => captureAppLinkClick(app, "featured_card")}
+      >
         <AppImage app={app} className="mb-4 h-20 w-20 rounded-xl object-contain" />
         <CardTitle className="discover-line-clamp-1 mb-3 text-2xl font-medium leading-tight text-secondary">
           {app.title}

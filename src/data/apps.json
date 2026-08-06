@@ -147,17 +147,6 @@
   },
   {
     "categories": [
-      "messengers"
-    ],
-    "title": "Chachi",
-    "description": "Relay-based group chats for Nostr",
-    "url": "https://chachi.chat/?ref=getalby.com&utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "platforms": [
-      "web"
-    ]
-  },
-  {
-    "categories": [
       "streaming"
     ],
     "title": "CornyChat",
@@ -833,20 +822,6 @@
   },
   {
     "categories": [
-      "publisher_tools"
-    ],
-    "title": "Habla",
-    "description": "Read, write, curate and monetize long form content",
-    "url": "https://habla.news/?ref=getalby.com&utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "platforms": [
-      "web"
-    ],
-    "protocols": [
-      "nwc"
-    ]
-  },
-  {
-    "categories": [
       "chats_and_communities"
     ],
     "title": "Iris",
@@ -982,17 +957,6 @@
   },
   {
     "categories": [
-      "entertainment"
-    ],
-    "title": "Pinstr",
-    "description": "Discover new ideas, inspiration, or share content",
-    "url": "https://pinstr.app/?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "platforms": [
-      "web"
-    ]
-  },
-  {
-    "categories": [
       "chats_and_communities",
       "wallets"
     ],
@@ -1051,17 +1015,6 @@
     ],
     "protocols": [
       "nwc"
-    ]
-  },
-  {
-    "categories": [
-      "chats_and_communities"
-    ],
-    "title": "zapddit",
-    "description": "A reddit-style Nostr client with communities",
-    "url": "https://zapddit.com/?ref=getalby.com&utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "platforms": [
-      "web"
     ]
   },
   {
@@ -1461,24 +1414,6 @@
   },
   {
     "categories": [
-      "wallets"
-    ],
-    "title": "Flash Wallet",
-    "description": "Easy non-custodial bitcoin lightning wallet",
-    "url": "https://paywithflash.com/wallet/?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "platforms": [
-      "ios",
-      "android"
-    ],
-    "protocols": [
-      "nwc"
-    ],
-    "walletSubcategory": [
-      "nwc_wallets"
-    ]
-  },
-  {
-    "categories": [
       "payments",
       "wallets"
     ],
@@ -1693,17 +1628,6 @@
       "web"
     ],
     "github": "https://github.com/Tunnelsats/tunnelsats"
-  },
-  {
-    "categories": [
-      "privacy"
-    ],
-    "title": "VPNSTR",
-    "description": "High-speed and secure VPN, paid with Lightning",
-    "url": "https://www.vpnstr.com/?ref=getalby&utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "platforms": [
-      "web"
-    ]
   },
   {
     "categories": [
@@ -1952,20 +1876,6 @@
       "web"
     ],
     "github": "https://github.com/miguelmedeiros/zapin.me"
-  },
-  {
-    "categories": [
-      "ai"
-    ],
-    "title": "LNFly",
-    "description": "Prototype lightning apps with a single prompt",
-    "url": "https://lnfly.albylabs.com/?ref=blog.getalby.com&utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "platforms": [
-      "web"
-    ],
-    "protocols": [
-      "nwc"
-    ]
   },
   {
     "categories": [
@@ -2346,27 +2256,6 @@
     "description": "Telegram tipping bot via your own connected wallet",
     "url": "https://t.me/ThunderTip_bot?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
     "image": "pages/discover/thundertip.jpg",
-    "platforms": [
-      "web",
-      "desktop",
-      "ios",
-      "android"
-    ],
-    "protocols": [
-      "nwc"
-    ],
-    "walletSubcategory": [
-      "wallet_interfaces"
-    ]
-  },
-  {
-    "categories": [
-      "wallets"
-    ],
-    "title": "Discord Zap Bot",
-    "description": "Discord tipping bot via your own connected wallet",
-    "url": "https://www.makeprisms.com/apps?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "image": "pages/discover/discord-zap-bot.jpg",
     "platforms": [
       "web",
       "desktop",

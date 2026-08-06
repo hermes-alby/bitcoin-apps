@@ -17,10 +17,12 @@ import ssl
 import re
 import urllib.request
 import urllib.error
+import urllib.parse
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 APPS_JSON = "src/data/apps.json"
+TRACKING_QUERY_PARAMS = {"ref", "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"}
 
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
@@ -30,10 +32,27 @@ GITHUB_RE = re.compile(r'github\.com/([^/]+/[^/]+)')
 
 # ─── Check 1: URL Health ────────────────────────────────────────────
 
+def normalize_url(url):
+    """Remove tracking params while preserving functional query params.
+
+    Some app-store URLs require parameters like `id`, `hl`, or `gl`.
+    Stripping the full query string turns valid URLs into false 404s.
+    """
+    parsed = urllib.parse.urlsplit(url)
+    query = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+    query = [(k, v) for k, v in query if k not in TRACKING_QUERY_PARAMS]
+    return urllib.parse.urlunsplit((
+        parsed.scheme,
+        parsed.netloc,
+        parsed.path,
+        urllib.parse.urlencode(query),
+        parsed.fragment,
+    ))
+
 def check_url(app):
     """HTTP health check for an app URL."""
     title = app["title"]
-    url = app["url"].split("?")[0]
+    url = normalize_url(app["url"])
     try:
         req = urllib.request.Request(url, method="HEAD")
         req.add_header("User-Agent", "Mozilla/5.0 (BitcoinAppsMonitor/1.0)")

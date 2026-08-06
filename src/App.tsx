@@ -42,6 +42,13 @@ function App() {
     window.history.replaceState(null, "", nextUrl);
   }, [filters]);
 
+  const applyFilter = (patch: Partial<DiscoverFilters>) => {
+    setFilters((current) => ({ ...current, ...patch }));
+    requestAnimationFrame(() => {
+      document.getElementById("discover-top")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  };
+
   const filteredCards = useMemo(() => filterApps(APPS, filters), [filters]);
   const featured = useMemo(() => featuredCards(filteredCards), [filteredCards]);
   const byCategory = useMemo(() => cardsByCategory(filteredCards), [filteredCards]);
@@ -90,30 +97,32 @@ function App() {
             </section>
           ) : null}
 
+          <div id="discover-top" aria-hidden="true" />
+
           {!searching ? (
             <section id="discover-filters" className="mb-12 rounded-xl bg-white pb-4 pt-4 md:sticky md:top-0 md:z-30">
               <CategoryPills
                 selected={filters.category}
-                onSelect={(category) => setFilters((current) => ({ ...current, category }))}
+                onSelect={(category) => applyFilter({ category })}
               />
               <div className="grid grid-cols-1 items-start gap-x-4 gap-y-4 px-3 sm:grid-cols-2 lg:grid-cols-3">
                 <FilterGroup
                   title="Platforms"
                   options={PLATFORM_OPTIONS}
                   selected={filters.platform}
-                  onSelect={(platform) => setFilters((current) => ({ ...current, platform }))}
+                  onSelect={(platform) => applyFilter({ platform })}
                 />
                 <FilterGroup
                   title="Connect with Alby"
                   options={PRODUCT_OPTIONS}
                   selected={filters.product}
-                  onSelect={(product) => setFilters((current) => ({ ...current, product }))}
+                  onSelect={(product) => applyFilter({ product })}
                 />
                 <FilterGroup
                   title="Connect with"
                   options={PROTOCOL_OPTIONS}
                   selected={filters.protocol}
-                  onSelect={(protocol) => setFilters((current) => ({ ...current, protocol }))}
+                  onSelect={(protocol) => applyFilter({ protocol })}
                 />
               </div>
             </section>
