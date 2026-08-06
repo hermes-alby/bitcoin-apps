@@ -2018,6 +2018,43 @@
   },
   {
     "categories": [
+      "wallets",
+      "node_management"
+    ],
+    "title": "Lightning Control Center",
+    "description": "Self-hosted Lightning node manager",
+    "url": "https://github.com/lioranecho-cpu/lightning-control-center?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
+    "platforms": [
+      "desktop"
+    ],
+    "protocols": [
+      "nwc"
+    ],
+    "walletSubcategory": [
+      "nwc_wallets",
+      "wallet_interfaces"
+    ]
+  },
+  {
+    "categories": [
+      "trading"
+    ],
+    "title": "B2B Central",
+    "description": "Crypto swap exchange aggregator",
+    "url": "https://b2p-central.com/?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
+    "platforms": [
+      "web"
+    ],
+    "protocols": [
+      "nwc",
+      "bitcoin_connect"
+    ],
+    "products": [
+      "alby_go"
+    ]
+  },
+  {
+    "categories": [
       "trading"
     ],
     "title": "Bitcoin Well",
@@ -2115,6 +2152,22 @@
     "url": "https://highlighter.com/?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
     "platforms": [
       "web"
+    ]
+  },
+  {
+    "categories": [
+      "chats_and_communities",
+      "misc"
+    ],
+    "title": "ZapBook",
+    "description": "A Nostr-native social reading app",
+    "url": "https://www.zapbook.space/?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
+    "image": "pages/discover/zapbook.svg",
+    "platforms": [
+      "android"
+    ],
+    "protocols": [
+      "nwc"
     ]
   },
   {
