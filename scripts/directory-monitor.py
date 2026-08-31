@@ -145,9 +145,9 @@ def main():
 
     gh = [check_github_repo(t, r) for t, r in gh_apps]
 
-    healthy = [r for r in gh if r["error"] is None and not r.get("archived") and (r.get("days_since_push") or 9999) <= 180]
-    stale   = [r for r in gh if r["error"] is None and not r.get("archived") and 180 < (r.get("days_since_push") or 0) <= 365]
-    dead    = [r for r in gh if r.get("archived") or (r.get("days_since_push") and r["days_since_push"] > 365)]
+    healthy = [r for r in gh if r["error"] is None and not r.get("archived") and r.get("days_since_push") is not None and r["days_since_push"] <= 180]
+    stale   = [r for r in gh if r["error"] is None and not r.get("archived") and r.get("days_since_push") is not None and 180 < r["days_since_push"] <= 365]
+    dead    = [r for r in gh if r.get("archived") or (r.get("days_since_push") is not None and r["days_since_push"] > 365)]
     errored = [r for r in gh if r["error"]]
 
     print(f"  🟢 {len(healthy)}  🟡 {len(stale)}  🔴 {len(dead)}  ⚠️ {len(errored)}")

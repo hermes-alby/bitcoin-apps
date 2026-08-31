@@ -1294,7 +1294,7 @@
     ],
     "title": "SimLN",
     "description": "Test your app with simulated Lightning network activity",
-    "url": "https://simln.dev/?ref=getalby.com&utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
+    "url": "https://github.com/bitcoin-dev-project/sim-ln?utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
     "platforms": [
       "web"
     ],
