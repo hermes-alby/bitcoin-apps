@@ -1021,17 +1021,6 @@
     "categories": [
       "trading"
     ],
-    "title": "Boltz",
-    "description": "Exchange between onchain, Lightning & Liquid",
-    "url": "https://boltz.exchange/?ref=getalby.com&utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
-    "platforms": [
-      "web"
-    ]
-  },
-  {
-    "categories": [
-      "trading"
-    ],
     "title": "Lnfi",
     "description": "Financialisation layer for Taproot Assets on Lightning & Nostr",
     "url": "https://lnfi.network/?ref=getalby.com&utm_source=bitcoinapps.info&utm_medium=referral&utm_campaign=bitcoinapps.info-referral",
